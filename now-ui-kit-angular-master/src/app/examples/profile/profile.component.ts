@@ -14,6 +14,12 @@ export class ProfileComponent implements OnInit {
     data : Date = new Date();
     focus;
     focus1;
+    nickName : string = '李明';
+    jobTitle : string = '自由摄影师';
+    comments : number = 10;
+    likes    : number = 20;
+    workCount: number = 30;
+    about    : string = '我是一名户外的摄影师，希望我的作品大家能够喜欢。'
 
     constructor() { }
 
