@@ -23,7 +23,7 @@ export class AuthenticationServiceService {
   }
 
   login(userName, password) {
-    return this.http.post<any>(`${$config.apiUrl}/users/authenticate`, {userName, password})
+    return this.http.post<any>(`${apiUrl}/users/authenticate`, {userName, password})
       .pipe(map(user => {
         localStorage.setItem('currentUser', user);
         this.currentUserSubject.next(user);
