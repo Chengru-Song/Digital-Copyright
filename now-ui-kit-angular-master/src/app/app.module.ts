@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
 import { ExamplesModule } from './examples/examples.module';
@@ -24,7 +25,8 @@ import { FooterComponent } from './shared/footer/footer.component';
         RouterModule,
         AppRoutingModule,
         ComponentsModule,
-        ExamplesModule
+        ExamplesModule,
+        HttpClientModule
     ],
     providers: [],
     bootstrap: [AppComponent]

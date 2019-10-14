@@ -8,7 +8,7 @@ import { User } from '../../_models/user'
 @Injectable({
   providedIn: 'root'
 })
-export class AuthenticationServiceService {
+export class AuthenticationService {
   // BehaviorSubject is A Subject that requires an initial value and emits its current value to new subscribers
   private currentUserSubject : BehaviorSubject<User>;
   public currentUser : Observable<User>;
